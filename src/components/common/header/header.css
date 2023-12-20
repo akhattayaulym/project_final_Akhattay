@@ -1,0 +1,56 @@
+.header-wrapper {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white
+}
+
+.burger-menu {
+    cursor: pointer;
+    background-color: #FD0100;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.2s;
+}
+
+.nav {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 12%;
+    background-color: #fff;
+    text-align: right;
+    padding: 10px 60px 10px 10px;
+    border-radius: 0 0 5px 5px;
+    z-index: 99;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #a70404;
+}
+
+.nav.active {
+    display: block;
+}
+
+.nav a {
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        top: 0;
+    }
+}
+
+
